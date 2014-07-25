@@ -1,0 +1,37 @@
+{
+    "name" : "celciustech/configuration-bundle",
+    "description" : "Configuration for your applications",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "Welly",
+        "email" : "welly@celciustech.net"
+    }],
+    "keywords" : [
+        "ConfigurationBundle"
+    ],
+    "license" : [
+        "MIT"
+    ],
+    "require" : {
+        "php": ">=5.3.3",
+        "symfony/symfony": "~2.3",
+        "celciustech/core-bundle": "dev-master"
+    },
+    "autoload" : {
+        "psr-0" : {
+            "CelciusTech\\CoreBundle" : ""
+        }
+    },
+    "target-dir" : "CelciusTech/CoreBundle",
+    "repositories" : [
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/celciustech/CelciusTechCoreBundle.git"
+        },
+    ],
+    "extra" : {
+        "branch-alias" : {
+            "dev-master" : "v1.0.0"
+        }
+    }
+}
